@@ -20,28 +20,25 @@
   
   1. Modo Mouse (Padrão):
      - Controle o cursor com os botões direcionais.
-     - Aceleração: Se um direcional for mantido pressionado por mais de 400ms,
-       a velocidade do cursor aumenta progressivamente.
-     - Use os botões de ação para os diferentes tipos de clique.
+     - Aceleração: Implementada uma curva de aceleração de duas velocidades, isso 
+     permite movimentos precisos de 1 pixel sem sacrificar a velocidade em movimentos amplos.
+          - Movimentos lentos (<= 2 ticks) usam "precisionSpeed" (ex: 1.0).
+          - Movimentos rápidos (> 2 ticks) usam "fastSpeedMultiplier" (ex: 15.0).
+          - Use os botões de ação para os diferentes tipos de clique.
   2. Modo Scroll:
-     - Clique no botão do pino 5 para entrar/sair deste modo.
-     - Enquanto estiver ativo, os botões Cima (Pino 9) e Baixo (Pino 8) controlam
+     - Clique no botão scrool para entrar/sair deste modo.
+     - Enquanto estiver ativo, os botões Cima e Baixo controlam
        a roda de rolagem (scroll wheel) do mouse.
      - Pressionar qualquer outro botão de ação (cliques, modo teclado) desativa
        automaticamente o modo scroll.
   3. Modo Teclado:
-     - Clique no botão do pino 6 para entrar/sair deste modo.
+     - Clique no botão teclado para entrar/sair deste modo.
      - Enquanto estiver ativo, os quatro botões direcionais se transformam nas
        setas do teclado, permitindo navegar em menus, textos, etc.
      - Pressionar qualquer outro botão de ação (cliques, modo scroll) desativa
        automaticamente o modo teclado.
  ================================================================================
-  - Implementada uma curva de aceleração de duas velocidades.
-    - Movimentos lentos (<= 2 ticks) usam "precisionSpeed" (ex: 1.0).
-    - Movimentos rápidos (> 2 ticks) usam "fastSpeedMultiplier" (ex: 15.0).
-  - Isso permite movimentos precisos de 1 pixel sem sacrificar a velocidade em movimentos amplos.
- ================================================================================
-   Pinos:
+    Pinos:
   --------------------------------------------------------------------------------
   BOTÕES DE AÇÃO:
   * Pino 6: Clique esquerdo (mouseButton)
