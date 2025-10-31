@@ -4,9 +4,8 @@ Código para utilizar um mouse de rolos utilizando Arduino Leonardo/DUE, switchs
 
 Instruções detalhadas de uso e confecção dispoíveis em [Manual de Confecção](https://docs.google.com/document/d/1pMJkUQSxsF9xCENk5veryS8fIuOfQ9QLx8JjR66zWYs/edit?usp=sharing)
 
-================================================================================
-  Mouse de Rolos (Encoders) 27/10/2025 - Funções de Modo e Correções
- ================================================================================
+# Mouse de Rolos (Encoders) 27/10/2025 - Funções de Modo e Aceleração
+
  Descrição Geral:
   Este código transforma um Arduino com capacidade USB nativa em um dispositivo
   híbrido de mouse e teclado, controlado por botões. O dispositivo possui três
