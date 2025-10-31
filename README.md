@@ -14,7 +14,7 @@ Instruções detalhadas a confecção estão dispoíveis em [Manual de Confecç�
   - Placas: Funciona em Arduinos com capacidade HID nativa, como Leonardo,
     Pro Micro e Due.
   - Bibliotecas: Requer as bibliotecas padrão "Mouse.h" e "Keyboard.h".
- ================================================================================ 
+ 
   Modos de Operação:
   
   1. Modo Mouse (Padrão):
@@ -36,9 +36,9 @@ Instruções detalhadas a confecção estão dispoíveis em [Manual de Confecç�
        setas do teclado, permitindo navegar em menus, textos, etc.
      - Pressionar qualquer outro botão de ação (cliques, modo scroll) desativa
        automaticamente o modo teclado.
- ================================================================================
+ 
     Pinos:
-  --------------------------------------------------------------------------------
+ 
   BOTÕES DE AÇÃO:
   * Pino 6: Clique esquerdo (mouseButton)
   * Pino 7: Clique direito (rightmouseButton)
